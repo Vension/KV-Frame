@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">V-Frame</string>
+
+    <!--param1:版本号 param2：当前年份-->
+    <string name="welcome_hint" formatted="false">V_%s\nCopyright  © %s-%s  %s</string>
+
+    <string name="rationale_ask_again">如果没有请求的权限，这个应用程序可能无法正常工作。打开应用程序设置屏幕修改应用程序权限。</string>
+    <string name="rationale_sms">应用程序需要访问您的短信权限</string>
+    <string name="rationale_camera">应用程序需要访问您的相机权限</string>
+
+    <string name="empty_view_hint">暂无数据</string>
+    <string name="error_view_hint">加载失败</string>
+    <string name="no_network_view_hint">网络异常</string>
+    <string name="loading_text">加载中&#8230;</string>
+    <string name="no_network">请检查网络后点击重新加载</string>
+    <string name="data_error">数据获取失败(ㄒoㄒ)~~</string>
+
+    <string name="vloading_dialog_message">加载中...</string>
+
+</resources>

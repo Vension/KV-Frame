@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/landing_backgrond"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" />
+
+    <com.vension.frame.views.flypage_indicaor.FlycoPageIndicaor
+        android:id="@+id/indicator_circle_stroke"
+        xmlns:fpi="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dip"
+        fpi:fpi_cornerRadius="4dp"
+        fpi:fpi_gap="10dp"
+        fpi:fpi_height="8dp"
+        fpi:fpi_selectColor="@color/app_main_thme_color"
+        fpi:fpi_strokeColor="@color/app_main_thme_color"
+        fpi:fpi_strokeWidth="1dp"
+        fpi:fpi_unselectColor="#00000000"
+        fpi:fpi_width="8dp"/>
+
+</RelativeLayout>

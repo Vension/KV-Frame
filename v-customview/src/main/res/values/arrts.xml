@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GADownloadingView">
+        <attr name="arrow_color" format="color" />
+        <attr name="loading_circle_back_color" format="color" />
+        <attr name="loading_line_color" format="color" />
+        <attr name="progress_line_color" format="color" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="done_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="recordView">
+        <attr name="hintText" format="string"/>
+        <attr name="playHintText" format="string"/>
+        <attr name="timeTextColor" format="reference"/>
+        <attr name="hintTextSize" format="dimension"/>
+        <attr name="middleLineHeight" format="dimension"/>
+        <attr name="progressSrc" format="reference"/>
+        <attr name="middleLineColor" format="reference"/>
+        <attr name="unit" format="string"/>
+        <attr name="model">
+            <enum name="record_model" value="1"/>
+            <enum name="play_model" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="materialStatusProgressAttr">
+        <attr name="arcColor" format="reference|color"/>
+        <attr name="progressBarBorderWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!--  固定宽高比的属性 -->
+    <declare-styleable name="FixedAspectRatioFrameLayout">
+        <attr name="orientation">
+            <enum name="fixWidth" value="0"/>
+            <enum name="fixHeight" value="1"/>
+        </attr>
+        <attr name="aspectRatio" format="float"/>
+    </declare-styleable>
+
+    <!--透明渐变的TabView-->
+    <declare-styleable name="AlphaView">
+        <attr name="av_tabIconNormal" format="reference"/>
+        <attr name="av_tabIconSelected" format="reference"/>
+        <attr name="av_tabText" format="string"/>
+        <attr name="av_tabTextSize" format="dimension"/>
+        <attr name="av_textColorNormal" format="color"/>
+        <attr name="av_textColorSelected" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeCaptcha">
+        <attr name="captchaWidth" format="dimension"/>
+        <attr name="captchaHeight" format="dimension"/>
+        <attr name="matchDeviation" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagCloudView">
+        <attr name="autoScrollMode">
+            <enum name="disable" value="0"/>
+            <enum name="decelerate" value="1"/>
+            <enum name="uniform" value="2"/>
+        </attr>
+        <attr name="radiusPercent" format="float"/>
+        <attr name="scrollSpeed" format="float"/>
+        <attr name="lightColor" format="color"/>
+        <attr name="darkColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndexableRecyclerView">
+        <attr name="indexBar_selectedTextColor" format="color" />
+        <attr name="indexBar_textColor" format="color" />
+        <attr name="indexBar_textSize" format="dimension" />
+        <attr name="indexBar_textSpace" format="dimension" />
+        <attr name="indexBar_background" format="reference|color" />
+        <attr name="indexBar_layout_width" format="dimension">
+            <!--<enum name="wrap_content" value="-2" /> 暂不支持 -->
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PatternLockView">
+        <attr name="dotCount" format="integer"/>
+        <attr name="dotNormalSize" format="dimension"/>
+        <attr name="dotSelectedSize" format="dimension"/>
+        <attr name="pathWidth" format="dimension"/>
+        <attr name="aspectRatioEnabled" format="boolean"/>
+        <attr name="aspectRatio_plv" format="enum">
+            <enum name="square" value="0"/>
+            <enum name="width_bias" value="1"/>
+            <enum name="height_bias" value="2"/>
+        </attr>
+        <attr name="normalStateColor" format="color"/>
+        <attr name="correctStateColor" format="color"/>
+        <attr name="wrongStateColor" format="color"/>
+        <attr name="dotAnimationDuration" format="integer"/>
+        <attr name="pathEndAnimationDuration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadarScanView">
+        <attr name="rs_circleColor" format="color"/>
+        <attr name="radarColor" format="color"/>
+        <attr name="tailColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScanLayout">
+        <attr name="scanBaseColor" format="color"/>
+        <attr name="scanColor" format="color"/>
+        <attr name="numOfCircle" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="circleCount" format="integer"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="drawableSizeLevel" format="integer"/>
+        <attr name="hasAnimator" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CarrouselLayout">
+        <attr name="c_autoRotation" format="boolean"/>
+        <attr name="rotationTime" format="integer"/>
+        <attr name="c_radius" format="dimension"/>
+        <attr name="rotateDirection">
+            <enum name="clockwise" value="0"/>
+            <enum name="anticlockwise" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PickerView">
+        <attr name="isLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollThumbColor" format="reference|color" />
+        <attr name="fastScrollTrackColor" format="reference|color" />
+        <attr name="fastScrollPopupBgColor" format="reference|color" />
+        <attr name="fastScrollPopupTextColor" format="reference|color" />
+        <attr name="fastScrollAutoHide" format="reference|boolean" />
+        <attr name="fastScrollAutoHideDelay" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer" />
+        <attr name="arc_angle" format="float" />
+        <attr name="arc_stroke_width" format="dimension" />
+        <attr name="arc_max" format="integer" />
+        <attr name="arc_unfinished_color" format="color" />
+        <attr name="arc_finished_color" format="color" />
+        <attr name="arc_text_size" format="dimension" />
+        <attr name="arc_text_color" format="color" />
+        <attr name="arc_suffix_text" format="string" />
+        <attr name="arc_suffix_text_size" format="dimension" />
+        <attr name="arc_suffix_text_padding" format="dimension" />
+        <attr name="arc_bottom_text" format="string" />
+        <attr name="arc_bottom_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AccelerationProgress">
+        <attr name="accBallRadius" format="dimension"></attr>
+        <attr name="bigCircleStroke" format="dimension"></attr>
+        <attr name="accBallBackground" format="color"></attr>
+        <attr name="bigCircleBackground" format="color"></attr>
+        <attr name="acc_duration" format="integer"></attr>
+        <attr name="time_TextSize" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PasscodeView">
+        <attr name="passcodeViewType" format="enum">
+            <enum name="set_passcode" value="0"/>
+            <enum name="check_passcode" value="1"/>
+        </attr>
+        <attr name="normalStateColor_pcv" format="color"/>
+        <attr name="correctStateColor_pcv" format="color"/>
+        <attr name="wrongStateColor_pcv" format="color"/>
+        <attr name="numberTextColor" format="color"/>
+        <attr name="passcodeLength" format="integer"/>
+        <attr name="firstInputTip" format="string"/>
+        <attr name="secondInputTip" format="string"/>
+        <attr name="wrongLengthTip" format="string"/>
+        <attr name="wrongInputTip" format="string"/>
+        <attr name="correctInputTip" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressImageView">
+        <attr name="progressTextColor" format="color"/>
+        <attr name="progressTextSize" format="dimension"/>
+        <attr name="progressStartColor" format="color"/>
+        <attr name="progressEndColor" format="color"/>
+        <attr name="progressType" format="integer">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SeatTableView">
+        <attr name="seat_checked" format="reference"/>
+        <attr name="seat_sold" format="reference"/>
+        <attr name="seat_available" format="reference"/>
+        <attr name="overview_checked" format="color"/>
+        <attr name="overview_sold" format="color"/>
+        <attr name="txt_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="DilatingDotsProgressBar">
+        <attr name="android:radius" />
+        <attr name="android:color" />
+        <attr name="dd_numDots" format="integer" />
+        <attr name="dd_scaleMultiplier" format="float" />
+        <attr name="dd_animationDuration" format="integer" />
+        <attr name="dd_horizontalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="auto_start" format="boolean"/>
+        <attr name="base_alpha" format="float"/>
+        <attr name="duration" format="integer"/>
+        <attr name="repeat_count" format="integer"/>
+        <attr name="repeat_delay" format="integer"/>
+        <attr name="repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="angle" format="enum">
+            <enum name="cw_0" value="0"/>
+            <enum name="cw_90" value="90"/>
+            <enum name="cw_180" value="180"/>
+            <enum name="cw_270" value="270"/>
+        </attr>
+        <attr name="dropoff" format="float"/>
+        <attr name="fixed_width" format="dimension"/>
+        <attr name="fixed_height" format="dimension"/>
+        <attr name="intensity" format="float"/>
+        <attr name="relative_width" format="float"/>
+        <attr name="relative_height" format="float"/>
+        <attr name="shape" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="tilt" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="SVGAImageView">
+        <attr name="source" format="string" />
+        <attr name="autoPlay" format="boolean" />
+        <attr name="antiAlias" format="boolean" />
+        <attr name="loopCount" format="integer" />
+        <attr name="clearsAfterStop" format="boolean" />
+        <attr name="fillMode" format="enum">
+            <enum name="Backward" value="0" />
+            <enum name="Forward" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedSvgView">
+        <attr name="animatedSvgImageSizeX" format="integer"/>
+        <attr name="animatedSvgImageSizeY" format="integer"/>
+        <attr name="animatedSvgTraceTime" format="string"/>
+        <attr name="animatedSvgTraceTimePerGlyph" format="string"/>
+        <attr name="animatedSvgFillStart" format="string"/>
+        <attr name="animatedSvgFillTime" format="string"/>
+        <attr name="animatedSvgGlyphStrings" format="reference"/>
+        <attr name="animatedSvgTraceColors" format="reference"/>
+        <attr name="animatedSvgTraceResidueColors" format="reference"/>
+        <attr name="animatedSvgTraceMarkerLength" format="integer"/>
+        <attr name="animatedSvgFillColors" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="HourglassView">
+        <!--上下盖子颜色-->
+        <attr name="hv_topAndBottom_color" format="color"/>
+        <!--左右线条颜色-->
+        <attr name="hv_leftAndRight_color" format="color"/>
+        <!--沙子颜色-->
+        <attr name="hv_sand_color" format="color"/>
+        <!--沙子全部下落的时间-->
+        <attr name="hv_duration" format="integer"/>
+        <!--沙漏的扁度默认7.5f-->
+        <attr name="hv_flat" format="float"/>
+        <!--是否自动开始-->
+        <attr name="hv_auto" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="BulletinView">
+        <attr name="bulletinInterval" format="integer"/>
+        <attr name="bulletinEnterAnim" format="reference"/>
+        <attr name="bulletinLeaveAnim" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SubmitButton">
+        <attr name="sub_btn_background" format="color" />
+        <attr name="sub_btn_tick_color" format="color" />
+        <attr name="sub_btn_line_color" format="color" />
+        <attr name="sub_btn_ripple_color" format="color" />
+        <attr name="sub_btn_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RxSeekBar">
+        <attr name="maxProgress" format="float"/>
+        <attr name="minProgress" format="float"/>
+        <attr name="reserve" format="float"/>
+        <attr name="cells" format="integer"/>
+        <attr name="hideProgressHint" format="boolean"/>
+        <attr name="isHintHolder" format="boolean"/>
+        <attr name="lineColorSelected" format="color"/>
+        <attr name="lineColorEdge" format="color"/>
+        <attr name="thumbPrimaryColor" format="color"/>
+        <attr name="thumbSecondaryColor" format="color"/>
+        <attr name="markTextArray" format="reference"/>
+        <attr name="seekBarResId" format="reference"/>
+        <!-- must use 9 path ！！！-->
+        <attr name="progressHintResId" format="reference"/>
+        <attr name="textPadding" format="dimension" />
+        <attr name="textSize2" format="dimension" />
+        <attr name="hintBGHeight" format="dimension" />
+        <attr name="hintBGWith" format="dimension" />
+        <attr name="hintBGPadding" format="dimension" />
+        <attr name="seekBarHeight" format="dimension"/>
+        <attr name="thumbSize" format="dimension"/>
+        <attr name="cellMode" format="enum">
+            <enum name="number" value="0"/>
+            <enum name="other" value="1"/>
+        </attr>
+        <attr name="seekBarMode" format="enum">
+            <enum name="single" value="1"/>
+            <enum name="range" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowImageView">
+        <attr name="shadowRound" format="dimension" />
+        <attr name="shadowSrc" format="reference" />
+        <attr name="shadowColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ContentWithSpaceEditText">
+        <attr name="input_type" format="enum">
+            <enum name="phone" value="0"/>
+            <enum name="bank_card_no" value="1"/>
+            <enum name="identify_card_no" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SuperCircleView">
+        <!-- 圆的半价 -->
+        <attr name="min_circle_radio" format="integer"></attr>
+        <!-- 圆环的宽度 -->
+        <attr name="ring_width" format="float"></attr>
+        <!-- 分成几段 -->
+        <attr name="select" format="integer"></attr>
+        <!-- 每段间隔的角度 -->
+        <attr name="selec_angle" format="integer"></attr>
+        <!-- 圆的颜色 -->
+        <attr name="circle_color" format="color"></attr>
+        <!-- 圆的颜色 -->
+        <attr name="max_circle_color" format="color"></attr>
+        <!-- 圆环的默认颜色 -->
+        <attr name="ring_normal_color" format="color"></attr>
+        <!-- 圆环要显示的彩色的区域-->
+        <attr name="ring_color_select" format="integer"></attr>
+        <!-- 是否显示断 -->
+        <attr name="is_show_select" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="EndlessLoopAdapterContainer">
+        <attr name="shouldRepeat" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FeatureCoverFlow">
+        <attr name="coverWidth" format="dimension" />
+        <attr name="coverHeight" format="dimension" />
+        <attr name="spacing" format="float" />
+        <attr name="rotationThreshold" format="float" />
+        <attr name="scalingThreshold" format="float" />
+        <attr name="adjustPositionThreshold" format="float" />
+        <attr name="adjustPositionMultiplier" format="float" />
+        <attr name="maxRotationAngle" format="float" />
+        <attr name="maxScaleFactor" format="float" />
+        <attr name="circlePathRadius" format="float" />
+        <attr name="circlePathRadiusInMatrixSpace" format="float" />
+        <attr name="reflectionHeight" format="float" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="reflectionOpacity" format="integer" />
+        <attr name="tunningWidgetSize" format="dimension" />
+        <attr name="alignAnimationTime" format="integer" />
+        <attr name="verticalPaddingTop" format="dimension" />
+        <attr name="verticalPaddingBottom" format="dimension" />
+        <attr name="reflectionBackroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LotteryView">
+        <attr name="outer_small_circle_color_active" format="color"></attr>  <!-- 小圆圈变化的颜色 -->
+        <attr name="outer_small_circle_color_default" format="color"></attr> <!-- 小圆圈默认颜色 -->
+        <attr name="lottery_invalidate_times" format="integer"></attr>       <!-- 抽奖动画刷新次数 -->
+        <attr name="self_width_size_factor" format="float"></attr>           <!-- view宽度占屏幕宽度的比例 建议设置此值不小于0.75f -->
+        <attr name="inner_round_card_color_default" format="color"></attr>   <!-- 内部卡片默认背景颜色 -->
+    </declare-styleable>
+
+    <!-- LikeButton -->
+    <declare-styleable name="LikeButton">
+        <attr name="icon_type" format="string" />
+        <attr name="icon_size" format="dimension|reference"/>
+        <attr name="like_drawable" format="reference" />
+        <attr name="unlike_drawable" format="reference" />
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean"/>
+        <attr name="is_enabled" format="boolean"/>
+        <attr name="anim_scale_factor" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconCountView">
+        <attr name="count" format="integer"/>
+        <attr name="state" format="boolean"/>
+        <attr name="normalRes" format="reference"/>
+        <attr name="selectedRes" format="reference"/>
+        <attr name="zeroText" format="string"/>
+        <attr name="textNormalColor" format="color"/>
+        <attr name="textSelectedColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="compareindicator">
+        <attr name="approve_res" format="reference"/>
+        <attr name="opposite_res" format="reference"/>
+        <attr name="approve_line_color" format="color"/>
+        <attr name="oppose_line_color" format="color"/>
+        <attr name="lineWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PaletteImageView">
+        <attr name="paletteRadius" format="dimension" />
+        <attr name="paletteSrc" format="reference" />
+        <attr name="palettePadding" format="dimension" />
+        <attr name="paletteOffsetX" format="dimension" />
+        <attr name="paletteOffsetY" format="dimension" />
+        <attr name="paletteShadowRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RadarWaveView">
+        <attr name="waveColor" format="color" />
+        <attr name="waveAmplitude" format="dimension" />
+        <attr name="waveSpeed" format="float" />
+        <attr name="waveStartPeriod" format="float" />
+        <attr name="waveStart" format="boolean" />
+        <attr name="waveFillTop" format="boolean" />
+        <attr name="waveFillBottom" format="boolean" />
+        <attr name="waveFillType" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+        <attr name="waveType" format="enum">
+            <enum name="sin" value="0" />
+            <enum name="cos" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShoppingView">
+        <attr name="sv_bg_color" format="color"/>
+        <attr name="sv_text" format="string"/>
+        <attr name="sv_text_size" format="dimension"/>
+        <attr name="sv_duration" format="integer"/>
+    </declare-styleable>
+
+</resources>

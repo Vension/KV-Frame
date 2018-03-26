@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="贝塞尔曲线实现的水波效果" />
+
+        <com.vension.customview.waveview.WaveViewByBezier
+            android:id="@+id/wave_bezier"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="波浪动画--正余弦函数实现" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.vension.customview.waveview.WaveViewBySinCos
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                wave:waveAmplitude="10dp"
+                wave:waveFillType="top"
+                wave:waveSpeed="3"
+                wave:waveStart="true"
+                wave:waveStartPeriod="1"
+                wave:waveType="sin" />
+
+            <com.vension.customview.waveview.WaveViewBySinCos
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                wave:waveAmplitude="10dp"
+                wave:waveFillType="top"
+                wave:waveSpeed="3"
+                wave:waveStart="true"
+                wave:waveStartPeriod="0.5"
+                wave:waveType="sin" />
+
+        </FrameLayout>
+
+
+        <com.vension.customview.waveview.WaveViewBySinCos
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            wave:waveAmplitude="10dp"
+            wave:waveColor="#cccccccc"
+            wave:waveFillType="bottom"
+            wave:waveSpeed="3"
+            wave:waveStart="true"
+            wave:waveStartPeriod="1"
+            wave:waveType="sin" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+
+            <com.vension.customview.waveview.WaveViewBySinCos
+                android:id="@+id/wave_sin"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                wave:waveAmplitude="15dp"
+                wave:waveColor="@color/colorAccent"
+                wave:waveFillType="bottom"
+                wave:waveSpeed="3"
+                wave:waveStart="true"
+                wave:waveStartPeriod="1"
+                wave:waveType="sin" />
+
+            <com.vension.customview.waveview.WaveViewBySinCos
+                android:id="@+id/wave_sin2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                wave:waveAmplitude="15dp"
+                wave:waveColor="@color/colorAccent"
+                wave:waveFillType="bottom"
+                wave:waveSpeed="3"
+                wave:waveStart="true"
+                wave:waveStartPeriod="0"
+                wave:waveType="sin" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

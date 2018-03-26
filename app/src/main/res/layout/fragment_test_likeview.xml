@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/padding_left_15dip_top_10dip">
+            <com.vension.customview.likeviews.IconCountView
+                android:id="@+id/praise_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:count="0"
+                app:state="false"
+                app:zeroText="赞"
+                app:normalRes="@mipmap/icon_praise_normal2"
+                app:selectedRes="@mipmap/icon_praise_selected2"
+                app:textSelectedColor="@color/app_main_thme_color"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/praise_view2"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                />
+            <com.vension.customview.likeviews.IconCountView
+                android:id="@+id/praise_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginSize_15"
+                app:count="0"
+                app:state="false"
+                app:zeroText="收藏"
+                app:textNormalColor="@color/gray"
+                app:textSelectedColor="@color/app_main_thme_color"
+                app:textSize="12sp"
+                app:normalRes="@mipmap/icon_collect_normal1"
+                app:selectedRes="@mipmap/icon_collect_selected1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/praise_view1"
+                app:layout_constraintRight_toLeftOf="@+id/praise_view3"
+                />
+            <com.vension.customview.likeviews.IconCountView
+                android:id="@+id/praise_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginSize_15"
+                app:count="4309"
+                app:state="false"
+                app:textNormalColor="@color/gray"
+                app:textSelectedColor="@color/app_main_thme_color"
+                app:normalRes="@mipmap/icon_praise_normal2"
+                app:selectedRes="@mipmap/icon_praise_selected2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/praise_view2"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+        </LinearLayout>
+
+
+        <View style="@style/Line_Horizontal_1dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/padding_left_15dip_top_10dip"
+            android:orientation="horizontal">
+            <com.vension.customview.likeviews.likebtn.LikeButton
+                app:liked="true"
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_size="22dp"
+                app:icon_type="star" />
+            <com.vension.customview.likeviews.likebtn.LikeButton
+                android:id="@+id/heart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_size="22dp"
+                app:anim_scale_factor="3"
+                app:icon_type="heart" />
+            <com.vension.customview.likeviews.likebtn.LikeButton
+                android:id="@+id/thumb_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:circle_end_color="@android:color/holo_blue_dark"
+                app:circle_start_color="@android:color/holo_blue_bright"
+                app:dots_primary_color="@android:color/holo_blue_light"
+                app:dots_secondary_color="@android:color/holo_blue_dark"
+                app:icon_size="22dp"
+                app:like_drawable="@drawable/thumb_on"
+                app:unlike_drawable="@drawable/thumb_off" />
+            <com.vension.customview.likeviews.likebtn.LikeButton
+                android:id="@+id/smile_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:circle_end_color="@android:color/holo_purple"
+                app:circle_start_color="@android:color/holo_purple"
+                app:dots_primary_color="@android:color/holo_blue_dark"
+                app:dots_secondary_color="@android:color/holo_blue_light"
+                app:icon_size="22dp" />
+            <com.vension.customview.likeviews.likebtn.LikeButton
+                android:id="@+id/vector_android_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:circle_end_color="@android:color/holo_green_dark"
+                app:circle_start_color="@android:color/holo_green_dark"
+                app:dots_primary_color="@android:color/holo_green_dark"
+                app:dots_secondary_color="@android:color/holo_green_light"
+                app:icon_size="22dp"
+                app:like_drawable="@drawable/ic_android_green_500_24dp"
+                app:unlike_drawable="@drawable/ic_android_grey_500_24dp" />
+        </LinearLayout>
+
+        <View style="@style/Line_Horizontal_1dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding_left_15dip_top_10dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="20dp"
+                        android:clickable="true"
+                        android:src="@mipmap/good"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/good2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="good2"
+                        android:src="@mipmap/good"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/collection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:src="@mipmap/collection"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:src="@mipmap/bookmark"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/MarginSize_10"
+                android:text="reset"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

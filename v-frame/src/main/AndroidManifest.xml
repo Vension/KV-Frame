@@ -1,0 +1,57 @@
+<manifest package="com.vension.frame"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- 访问网络的基本权限-->
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<!-- 写内存卡的权限 -->
+<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!-- 读内存卡的权限 -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<!-- 读取手机状态的权限 -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name ="android.permission.GET_TASKS"/>
+<!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+<uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+<!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+<uses-permission android:name="androi/d.permission.ACCESS_WIFI_STATE" />
+<!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+<!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<!--悬浮窗权限-->
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<!-- SD卡读取权限，用户写入离线定位数据 -->
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+<!-- 读短信权限 -->
+<uses-permission android:name="android.permission.READ_SMS" />
+<!-- 接收短信 -->
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
+<!-- 发短信权限 -->
+<uses-permission android:name="android.permission.SEND_SMS" />
+<!-- 允许编写短信短信 -->
+<uses-permission android:name="android.permission.WRITE_SMS" />
+<!-- 拨打电话权限 -->
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<!-- 来电消音 -->
+<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+<!-- 打开设置权限 -->
+<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+<!-- 震动 -->
+<uses-permission android:name="android.permission.VIBRATE" />
+<!-- 照相机 -->
+<uses-permission android:name="android.permission.CAMERA"/>
+<!-- 闪光灯 -->
+<uses-permission android:name="android.permission.FLASHLIGHT"/>
+<uses-feature
+    android:name="android.hardware.camera"
+    android:required="false" />
+<uses-feature
+    android:name="android.hardware.camera.autofocus"
+    android:required="false" />
+
+</manifest>

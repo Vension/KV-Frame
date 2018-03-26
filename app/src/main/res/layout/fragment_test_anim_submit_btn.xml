@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/app_main_backgroup_color"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              tools:context=".ui.activitys.ProxyAvtivity">
+
+    <com.vension.customview.AnimSubmitButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="OK"
+        android:textSize="10sp"
+        android:textColor="@color/gray"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_tick_color="@color/yellow"
+        app:sub_btn_duration="1000"
+        app:sub_btn_line_color="@color/colorPrimary"
+        app:sub_btn_ripple_color="@color/colorPrimary"
+        />
+
+    <com.vension.customview.AnimSubmitButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Submit"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="2000"
+        app:sub_btn_line_color="@color/colorPrimary"
+        app:sub_btn_ripple_color="@color/colorPrimary"
+        app:sub_btn_tick_color="@color/white" />
+
+    <com.vension.customview.AnimSubmitButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sub_btn_tick_color="@color/white"
+        android:text="Submit"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:sub_btn_duration="3000" />
+
+    <com.vension.customview.AnimSubmitButton
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sub_btn_duration="4000" />
+
+</LinearLayout>

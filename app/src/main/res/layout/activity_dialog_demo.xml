@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_main_backgroup_color"
+              android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn1_ac_like_ios_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息" />
+
+    <Button
+        android:id="@+id/btn2_ac_like_ios_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片" />
+
+    <Button
+        android:id="@+id/btn3_ac_like_ios_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表" />
+
+    <Button
+        android:id="@+id/btn4_ac_like_ios_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮一" />
+
+    <Button
+        android:id="@+id/btn5_ac_like_ios_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮二" />
+    <Button
+        android:id="@+id/btn_show_loadingDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="loadingDialog" />
+
+
+</LinearLayout>

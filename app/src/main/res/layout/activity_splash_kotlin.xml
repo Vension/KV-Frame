@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activitys.SplashKotlinActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="100dip"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="5dip"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="50dip">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_open_eyes"/>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:lineSpacingExtra="3dip"
+            android:layout_marginTop="@dimen/MarginSize_10"
+            android:text="@string/welcome_hint"
+            android:gravity="center"
+            android:textSize="@dimen/TextSize_10"
+            android:textColor="@color/Color_999999"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

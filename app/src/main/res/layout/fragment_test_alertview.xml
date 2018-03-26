@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <Button
+        android:id="@+id/btn_alertShow1"
+        android:text="显示取消/确定按钮"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_alertShow2"
+        android:text="只显示确认按钮"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_alertShow3"
+        android:text="列表弹窗"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        />
+
+    <Button
+        android:id="@+id/btn_alertShow4"
+        android:text="bottomSheet列表+取消按钮"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"/>
+
+    <Button android:text="bottomSheet内容+取消按钮"
+            android:id="@+id/btn_alertShow5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"/>
+
+    <Button android:text="bottomSheet拍照/相册"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_alertShow6"/>
+
+    <Button android:text="自定义Layout的弹窗"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_alertShowExt"/>
+
+</LinearLayout>

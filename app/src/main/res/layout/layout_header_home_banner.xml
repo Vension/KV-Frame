@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- banner -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip">
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/mBanner"
+            style="@style/MatchMatch"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_transitionEffect="alpha" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

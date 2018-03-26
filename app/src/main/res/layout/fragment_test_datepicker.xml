@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:text="TimeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"/>
+
+    <Button
+        android:id="@+id/btn_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all"/>
+
+    <Button
+        android:id="@+id/btn_year_month_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year_month_day"/>
+
+    <Button
+        android:id="@+id/btn_year_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year_month"/>
+
+    <Button
+        android:id="@+id/btn_month_day_hour_minute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month_day_hour_minute"/>
+
+    <Button
+        android:id="@+id/btn_hour_minute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hour_minute"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.vension.customview.ShoppingView
+        android:id="@+id/sv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <com.vension.customview.ShoppingView
+        android:id="@+id/sv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        app:sv_bg_color="#CD5555"
+        app:sv_text="点击购买"/>
+
+    <com.vension.customview.ShoppingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        app:sv_bg_color="@color/colorAccent"
+        app:sv_duration="200"
+        app:sv_text="SHOPPING"
+        app:sv_text_size="22sp"/>
+
+    <com.vension.customview.ShoppingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        app:sv_bg_color="#D8BFD8"
+        app:sv_duration="100"
+        app:sv_text="RxTools"
+        app:sv_text_size="18sp"/>
+
+    
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="scrollview"/>
+    <item type="id" name="btn_xarc_meun"/>
+
+
+    <item name="main_layout" type="id"/>
+    <item name="month_calendar" type="id"/>
+    <item name="week_text" type="id"/>
+    <item name="week_calendar" type="id"/>
+    <item name="content_layout" type="id"/>
+
+
+    <!--stickynavlayout ids-->
+    <item name="id_stickynavlayout_topview" type="id"/>
+    <item name="id_stickynavlayout_viewpager" type="id"/>
+    <item name="id_stickynavlayout_indicator" type="id"/>
+    <item name="id_stickynavlayout_innerscrollview" type="id"/>
+
+
+    <!--多状态view ids-->
+    <item name="empty_view" type="id"/>
+    <item name="error_view" type="id"/>
+    <item name="loading_view" type="id"/>
+    <item name="content_view" type="id"/>
+    <item name="no_network_view" type="id"/>
+
+    <item name="empty_retry_view" type="id"/>
+    <item name="error_retry_view" type="id"/>
+    <item name="no_network_retry_view" type="id"/>
+
+
+</resources>

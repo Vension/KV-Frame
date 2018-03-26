@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:gravity="center_vertical"
+        android:background="@color/app_main_thme_color">
+
+        <TextView
+            android:id="@+id/tv_currentCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/MarginSize_12"
+            android:text="广州"
+            android:drawableRight="@drawable/ic_arrow_drop_down_white_24dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSize_14" />
+
+        <RelativeLayout
+            android:id="@+id/home_search_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_bg_white_radius_20dip" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                app:srcCompat="@drawable/ic_search_gray_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:gravity="center_vertical"
+                android:text="搜索课程试试"
+                android:textColor="#bbbbbb"
+                android:textSize="@dimen/TextSize_13" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/MarginSize_12"
+            app:srcCompat="@drawable/ic_crop_free_white_24dp"/>
+    </LinearLayout>
+</RelativeLayout>

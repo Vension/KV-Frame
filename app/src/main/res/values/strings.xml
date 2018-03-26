@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">KV-Frame</string>
+
+    <string name="tab_title_home">精选</string>
+    <string name="tab_title_find">发现</string>
+    <string name="tab_title_hot">热门</string>
+    <string name="tab_title_me">我的</string>
+
+    <string name="image_index">%1$d/%2$d</string>
+    <string name="text_countdown_time">距离活动结束还有%1$d天\n%2$d:%3$d:%4$d</string>
+
+    <string name="title1">God of War Ascension</string>
+    <string name="title2">Assassin\'s Creed III</string>
+    <string name="title3">Hitman Absolution</string>
+    <string name="title4">Dishonored</string>
+
+    <string name="all">ALL</string>
+    <string name="year_month_day">YEAR-MONTH-DAY</string>
+    <string name="year_month">YEAR-MONTH</string>
+    <string name="month_day_hour_minute">MONTH-DAY-HOUR-MINUTE</string>
+    <string name="hour_minute">HOUR-MINUTE</string>
+
+    <string name="email">EMAIL</string>
+    <string name="calender">CALENDAR</string>
+    <string name="shopping">SHOPPING</string>
+    <string name="social_network">SOCIAL NETWORK</string>
+
+    <string name="email_hint">A system for sending and receiving messages electronically over a computer network.</string>
+    <string name="calender_hint">Note all your special occasions in calendar and keep them in your finger tips</string>
+    <string name="shopping_hint">Shop and get offers, promo codes and discounts on your future purchase.</string>
+    <string name="social_network_hint">Stay connected with your friends, colleagues and family globally</string>
+    <string name="skip">SKIP</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+
+    <string-array name="markArray">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="markArray2">
+        <item>-1</item>
+        <item>-0.5</item>
+        <item>0.1</item>
+        <item>0.5</item>
+        <item>0.9</item>
+    </string-array>
+    <string-array name="negativeMarkArray">
+        <item>-100</item>
+        <item>中间</item>
+        <item>0</item>
+        <item>中间</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="wordsArray">
+        <item>初级码农</item>
+        <item>中级码农</item>
+        <item>高级码农</item>
+        <item>CTO</item>
+        <item>卒</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.kevin.vension.demo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.kevin.vension.demo.base.KVApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/icon_logo"
+        android:roundIcon="@mipmap/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 启动页 -->
+        <activity android:name="com.kevin.vension.demo.ui.activitys.SplashJavaActivity"
+                  android:configChanges="orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.kevin.vension.demo.ui.activitys.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- 代理Activity //显示软键盘,并让布局压缩 -->
+        <activity
+            android:name="com.kevin.vension.demo.ui.activitys.ProxyAvtivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard"
+            android:theme="@style/AppTheme.SwipeBackTranslucent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <activity android:name="com.kevin.vension.demo.test.DialogDemoActivity"
+                  android:configChanges="orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.SwipeBackTranslucent"/>
+
+        <activity
+            android:name="com.kevin.vension.demo.v_custom.activitys.GestureViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SwipeBackTranslucent"/>
+        <activity
+            android:name="com.kevin.vension.demo.test.BroadCastActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SwipeBackTranslucent"/>
+
+        <receiver
+            android:name=".test.broadcast.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <!-- 接收开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.kevin.vension.demo.test.broadcast.MyReceiver">
+            <intent-filter android:priority="500"><!-- 设置优先级 -->
+                <action android:name="com.vension.MyReceiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kevin.vension.demo.test.broadcast.MyReceiver2">
+            <intent-filter android:priority="1000"> <!-- 1000为最高优先级，设置最高优先级 -->
+                <action android:name="com.mytest"/>
+            </intent-filter>
+        </receiver>
+
+        <!--<receiver-->
+            <!--android:enabled=["true" | "false"]-->
+        <!--//exported：此broadcastReceiver能否接收其他App的发出的广播-->
+        <!--//默认值是由receiver中有无intent-filter决定的：如果有intent-filter，默认值为true，否则为false-->
+        <!--android:exported=["true" | "false"]-->
+        <!--android:icon="drawable resource"-->
+        <!--android:label="string resource"-->
+        <!--//继承BroadcastReceiver子类的类名-->
+        <!--android:name=".mBroadcastReceiver"-->
+        <!--//具有相应权限的广播发送者发送的广播才能被此BroadcastReceiver所接收；-->
+        <!--android:permission="string"-->
+        <!--//BroadcastReceiver运行所处的进程-->
+        <!--//默认为app的进程，可以指定独立的进程-->
+        <!--//注：Android四大基本组件都可以通过此属性指定自己的独立进程-->
+        <!--android:process=":string" >-->
+
+        <!--//用于指定此广播接收器将接收的广播类型-->
+        <!--//本示例中给出的是用于接收网络状态改变时发出的广播-->
+        <!--<intent-filter>-->
+            <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--</intent-filter>-->
+    <!--</receiver>-->
+
+
+    </application>
+
+</manifest>

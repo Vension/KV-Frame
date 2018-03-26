@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="vertical"
+        style="@style/padding_left_10dip_top_5dip"
+        android:background="@color/app_main_thme_color">
+        <SearchView
+            android:id="@+id/my_searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rect_bg_white_radius_5dip"
+            android:iconifiedByDefault="false"
+            android:queryHint="请输入搜索内容" />
+    </LinearLayout>
+
+</RelativeLayout>

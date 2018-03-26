@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.vension.customview.tag_3d.TagCloudView
+        android:id="@+id/tag_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:autoScrollMode="uniform"
+        app:darkColor="@color/app_main_thme_color"
+        app:lightColor="@color/colorAccent"
+        app:radiusPercent="0.6"
+        app:scrollSpeed="3" />
+
+    <Button
+        android:id="@+id/tag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Text Tag" />
+    <Button
+        android:id="@+id/tag_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom View Tag" />
+    <Button
+        android:id="@+id/tag_vector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VectorDrawable Tag" />
+
+
+</LinearLayout>

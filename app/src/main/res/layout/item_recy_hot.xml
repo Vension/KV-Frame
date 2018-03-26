@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/app_main_thme_color"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dip"
+        app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_custome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_oval_bg_white_color"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="X"
+            android:textColor="@color/app_main_thme_color"
+            android:textSize="@dimen/TextSize_10"/>
+
+        <TextView
+            android:id="@+id/tv_custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/PaddingSize_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="I am Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSize_14"/>
+
+        <LinearLayout
+            android:id="@+id/layout_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View style="@style/Line_Horizontal_06dip.color_DDDDDD"/>
+            <TextView
+                android:id="@+id/tv_custom_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/padding_top_6dip_left_3dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="I am desc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/TextSize_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:background="@color/white"
+              style="@style/padding_left_15dip_top_10dip">
+
+    <com.sunfusheng.glideimageview.GlideImageView
+        android:id="@+id/giv_product"
+        android:layout_width="100dip"
+        android:layout_height="72dip"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_load_empty"
+        app:siv_shape_type="rectangle"
+        app:siv_radius="8dip"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_right"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/MarginSize_10">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am Title"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/TextSize_14"/>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:lineSpacingExtra="3dip"
+            android:text="I am desc I am desc I am desc I am descI am desc"
+            android:textColor="@color/Color_666666"
+            android:textSize="@dimen/TextSize_13"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:layout_gravity="right"
+            android:text="2017-12-21 14:25"
+            android:textColor="@color/Color_999999"
+            android:textSize="@dimen/TextSize_12"/>
+    </LinearLayout>
+
+</LinearLayout>

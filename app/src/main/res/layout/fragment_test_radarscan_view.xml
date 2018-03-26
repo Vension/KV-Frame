@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/PaddingSize_15"
+            android:text="扫描+水波纹1"
+            android:textColor="@color/red"/>
+
+        <com.vension.customview.radarscanview.scan_1.ScanLayout
+            android:id="@+id/scanlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.vension.customview.radarscanview.scan_1.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+            <com.vension.customview.radarscanview.scan_1.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                app:drawableSizeLevel="3"
+                app:circleColor="#fa7646"
+                app:circleCount="6" />
+            <com.vension.customview.radarscanview.scan_1.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                app:drawableSizeLevel="2"
+                app:circleColor="#00c853"
+                app:circleCount="5" />
+            <com.vension.customview.radarscanview.scan_1.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                app:drawableSizeLevel="1"
+                app:circleColor="#f7f42d"
+                app:circleCount="4" />
+        </com.vension.customview.radarscanview.scan_1.ScanLayout>
+
+        <Button
+            android:id="@+id/animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="开始" />
+
+        <com.vension.customview.radarscanview.scan_1.RippleView
+            android:id="@+id/test"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/PaddingSize_15"
+            android:text="扫描+水波纹2"
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dip">
+            <com.vension.customview.radarscanview.scan_2.RadarScanView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.vension.customview.radarscanview.scan_2.RandomTextView
+                android:id="@+id/random_textview"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

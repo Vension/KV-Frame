@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#36311C"
+        android:centerColor="#1D2239"
+        android:endColor="#264044"
+        android:angle="135"
+        android:useLevel="true"/>
+    （204,141,88）->(235,210,179)->(194,138,81)
+    #CC8D58、EBD2B3、C28A51
+</shape>

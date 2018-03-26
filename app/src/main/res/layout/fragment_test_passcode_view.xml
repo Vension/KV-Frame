@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pass="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vension.customview.passcodeview.PasscodeView
+        android:id="@+id/passcodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!--<com.vension.customview.passcodeview.PasscodeView-->
+    <!--android:id="@+id/passcodeView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#6d72d6"-->
+    <!--pass:firstInputTip="Enter a passcode of 5 digits "-->
+    <!--pass:correctStateColor="#71bb4d"-->
+    <!--pass:wrongStateColor="#ea2b46"-->
+    <!--pass:normalStateColor="#ffffff"-->
+    <!--pass:numberTextColor="#222222"-->
+    <!--pass:passcodeLength="5"-->
+    <!--pass:passcodeViewType="set_passcode"/>-->
+
+</FrameLayout>

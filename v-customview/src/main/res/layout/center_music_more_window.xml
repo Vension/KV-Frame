@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#90FFFFFF"
+    android:gravity="bottom|center_horizontal" >
+
+    <TextView
+        android:id="@+id/more_window_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dip"
+        android:clickable="true"
+        android:drawablePadding="6dip"
+        android:drawableTop="@mipmap/ic_android"
+        android:gravity="center_horizontal"
+        android:text="文字" />
+
+    <TextView
+        android:id="@+id/more_window_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dip"
+        android:layout_toRightOf="@+id/more_window_local"
+        android:clickable="true"
+        android:drawablePadding="6dip"
+        android:drawableTop="@mipmap/ic_android"
+        android:gravity="center_horizontal"
+        android:text="相册"/>
+
+    <TextView
+        android:id="@+id/more_window_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/more_window_online"
+        android:clickable="true"
+        android:drawablePadding="6dip"
+        android:drawableTop="@mipmap/ic_android"
+        android:gravity="center_horizontal"
+        android:text="拍摄"/>
+
+    <TextView
+        android:id="@+id/more_window_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_local"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:drawablePadding="6dip"
+        android:drawableTop="@mipmap/ic_android"
+        android:gravity="center_horizontal"
+        android:text="签到"/>
+
+    <TextView
+        android:id="@+id/more_window_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_online"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="6dip"
+        android:layout_toRightOf="@+id/more_window_collect"
+        android:clickable="true"
+        android:drawableTop="@mipmap/ic_android"
+        android:gravity="center_horizontal"
+        android:text="点评"/>
+
+    <TextView
+        android:id="@+id/more_window_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_delete"
+        android:layout_toRightOf="@+id/more_window_auto"
+        android:clickable="true"
+        android:drawablePadding="6dip"
+        android:drawableTop="@mipmap/ic_android"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="更多"/>
+
+    <ImageView
+        android:id="@+id/center_music_window_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_auto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="78dip"
+        android:layout_toRightOf="@+id/more_window_collect"
+        android:src="@drawable/ic_close_black_48dp" />
+
+</RelativeLayout>

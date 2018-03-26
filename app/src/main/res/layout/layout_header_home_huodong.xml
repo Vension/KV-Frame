@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 跑马灯效果 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KV.头条"
+            style="@style/padding_left_15dip_top_10dip"
+            android:textColor="@color/red"
+            android:textSize="@dimen/TextSize_20"
+            android:textStyle="bold"/>
+        <View style="@style/Line_Vertical_06dip.color_DDDDDD"
+              android:layout_marginTop="@dimen/MarginSize_6"
+              android:layout_marginBottom="@dimen/MarginSize_6"/>
+        <com.vension.frame.views.marqueeView.MarqueeVerticalTextView
+            android:id="@+id/marquee_v_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MarginSize_12"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View style="@style/Line_Horizontal_06dip.color_DDDDDD"/>
+
+    <!-- 活动倒计时 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dip"
+        android:gravity="center"
+        android:background="@color/white"
+        style="@style/padding_left_15dip_top_10dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_countdown_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_logo"
+            android:drawablePadding="6dip"
+            android:gravity="center"
+            android:lineSpacingExtra="3dip"
+            android:textColor="@color/app_main_text_color"
+            android:text="距离活动还有"
+            android:textSize="@dimen/TextSize_14" />
+
+        <View style="@style/Line_Vertical_06dip.color_DDDDDD"
+              android:layout_marginLeft="@dimen/MarginSize_12"
+              android:layout_marginRight="@dimen/MarginSize_12"/>
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_huodong_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_logo"
+                android:drawablePadding="6dip"
+                android:gravity="center"
+                android:textColor="@color/app_main_text_color"
+                android:text="kevin"
+                android:textSize="@dimen/TextSize_14" />
+
+            <View style="@style/Line_Horizontal_06dip.color_DDDDDD"
+                  android:layout_marginTop="@dimen/MarginSize_12"
+                  android:layout_marginBottom="@dimen/MarginSize_12"/>
+
+            <TextView
+                android:id="@+id/tv_huodong_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_logo"
+                android:drawablePadding="6dip"
+                android:gravity="center"
+                android:text="Vension"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/TextSize_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

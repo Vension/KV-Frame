@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_main_backgroup_color"
+              android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/app_main_thme_color"
+        android:gravity="center"
+        android:text="设置手势界面"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.vension.customview.GestureView
+        android:id="@+id/gesture"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+
+</LinearLayout>

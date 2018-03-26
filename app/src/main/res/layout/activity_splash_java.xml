@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Color_white">
+
+
+    <ImageView
+        android:id="@+id/iv_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/img_splash"/>
+
+
+    <com.vension.frame.views.CountDownCircleView
+        android:id="@+id/count_down_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="15dip"
+        android:visibility="gone"
+        android:padding="5dip"
+        app:text_size="@dimen/TextSize_12"
+        app:default_circle_solide_color="@color/app_main_thme_color"
+        app:progress_color="@color/colorAccent"
+        app:small_circle_stroke_color="@color/colorAccent"
+        app:text_color="@color/Color_white"/>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:lineSpacingExtra="3dip"
+            android:text="@string/welcome_hint"
+            android:gravity="center"
+            android:textSize="@dimen/TextSize_10"
+            android:textColor="@color/Color_aaaaaa"/>
+
+</FrameLayout>

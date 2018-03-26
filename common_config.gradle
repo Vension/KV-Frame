@@ -1,0 +1,48 @@
+ext{
+
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    dependVersion = [
+            androidSupportSdkVersion: "27.1.0",
+            retrofitSdkVersion      : "2.4.0",
+            glideSdkVersion         : "4.6.1",
+            rxJava                  : "2.1.8",
+            rxAndroid               : "2.0.2"
+    ]
+
+    supportDeps = [
+            //--------  support  -------
+            supportv4               : "com.android.support:support-v4:$dependVersion.androidSupportSdkVersion",
+            appcompatv7             : "com.android.support:appcompat-v7:$dependVersion.androidSupportSdkVersion",
+            cardview                : "com.android.support:cardview-v7:$dependVersion.androidSupportSdkVersion",
+            design                  : "com.android.support:design:$dependVersion.androidSupportSdkVersion",
+            annotations             : "com.android.support:support-annotations:$dependVersion.androidSupportSdkVersion"
+    ]
+
+
+    retrofit = [
+            //------ retrofit和RxJava ---------
+            retrofit                : "com.squareup.retrofit2:retrofit:$dependVersion.retrofitSdkVersion",
+            retrofitConverterGson   : "com.squareup.retrofit2:converter-gson:$dependVersion.retrofitSdkVersion",
+            retrofitConverterScalars  : "com.squareup.retrofit2:converter-scalars:$dependVersion.retrofitSdkVersion",
+            retrofitAdapterRxjava2  : "com.squareup.retrofit2:adapter-rxjava2:$dependVersion.retrofitSdkVersion",
+            okhttp3LoggerInterceptor: 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    ]
+
+    rxJava = [
+            rxJava                : "io.reactivex.rxjava2:rxjava:$dependVersion.rxJava",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$dependVersion.rxAndroid"
+    ]
+
+    supportLibs = supportDeps.values()
+    networkLibs = retrofit.values()
+    rxJavaLibs = rxJava.values()
+
+}
