@@ -41,71 +41,44 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
    <img src="/screenshot/kotlin-mvp-1.gif" style="width: 30%;">
 
 
-## 下载体验
-
-点击[![](https://img.shields.io/badge/Download-apk-green.svg)](https://fir.im/kotlinmvp) 或者扫描下方二维码
-
-**（下方二维码，每日上限100次，如达到上限，还是 clone 源码吧！✧(≖ ◡ ≖✿)）**
-
-<img src="http://oyp2zrwnm.bkt.clouddn.com/QR-code-kotlin-mvp.png" width = "250" height = "250" alt="图片名称" align=center />
-
-
 
 ## 技术要点
 主要使用的第三方开源框架有：
 
- - [RxJava](https://github.com/ReactiveX/RxJava)
+ - [Retrofit2](https://github.com/square/retrofit)
+ - [RxJava2](https://github.com/ReactiveX/RxJava)
  - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
- - [Retrofit](https://github.com/square/retrofit)
- - [Glide](https://github.com/bumptech/glide)
+ - [Glide4](https://github.com/bumptech/glide)
  - [Logger](https://github.com/orhanobut/logger)
- - [FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)
  - [Flexbox-layout](https://github.com/google/flexbox-layout)
- - [RealtimeBlurView](https://github.com/mmin18/RealtimeBlurView)
  - [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
  - [BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)
  - [GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer)
 
-模块说明：
-
- - **每日精选：** 首页采用下拉刷新+RecyclerView 实现，Banner展示每日精选推荐的视频，监听 RecyclerView 的滑动事件，实现 TitleBar 的隐藏显示功能，底部菜单采用高斯模糊的半透明效果，使整个 APP 风格更加清爽。
- - **发现：** 包括关注和分类模块，关注是推荐的作者上传的视频集，分类包括时尚、运动、创意、广告、音乐、旅行、生活、记录、开胃、游戏、萌宠、动画、综艺、搞笑等可自由选择想查看的类型视频。
- - **热门：** 热门排行榜包括周排行、月排行、总排行的视频列表。
- - **搜索：** 根据关键字搜索榜你找到感兴趣的视频。
- - **我的：** 个人主页的相关介绍。
- - **观看记录：** 查看之前看过的视频，按时间进行排序。
 
 ## 更新日志
 
-**[最新记录请点击查看](https://github.com/git-xuhao/KotlinMvp/releases)**
-
-**v1.1**
-
- - 去除无用代码，添加观看记录功能。
-
 **v1.0**
 
- - 初始化版本，主要功能已经完成。
+ - 初始化版本,完成基本模块。
 
 ## 关于我
 
- - Email: igeekho@gmail.com
- - Home: [https://xuhaoblog.com](https://xuhaoblog.com)
- - CSDN:[http://blog.csdn.net/u011974987](http://blog.csdn.net/u011974987)
- - 简书: [http://www.jianshu.com/u/25bc3e1e7595](http://www.jianshu.com/u/25bc3e1e7595)
+ - Email: kevin-vension@foxmail.com
+ - CSDN:[https://blog.csdn.net/qq_15611357](https://blog.csdn.net/qq_15611357)
+ - 简书: [https://www.jianshu.com/users/38adb0e04e65/](https://www.jianshu.com/users/38adb0e04e65)
 
 ## Thanks
 
 - 感谢所有优秀的开源项目
-- [Eyepetizer](https://github.com/kaikaixue/Eyepetizer) ：最初是看了这个项目才开始做的，学了不少东西，写出了我自己的代码风格
 
 ## 声明
-**项目中的 API 均来自开眼视频，纯属学习交流使用，不得用于商业用途！**
+**本项目为个人练手项目，纯属学习交流使用，不得用于商业用途！**
 
 ## LICENSE
 
 ```
-Copyright 2017 Xiho
+Copyright 2018 Vension
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
