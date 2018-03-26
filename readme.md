@@ -1,7 +1,6 @@
 # KV-Frame
 
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0ee634e0cc3042f8a98e33d6135f39a6)](https://www.codacy.com/app/git-xuhao/KotlinMvp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=git-xuhao/KotlinMvp&amp;utm_campaign=Badge_Grade)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![](https://img.shields.io/badge/Author-vension-blue.svg)](http://vensionblog.com)
 [![](https://img.shields.io/badge/QQ-2506856664-orange.svg)](http://xuhaoblog.com)
@@ -16,7 +15,7 @@ GitHub地址：[https://github.com/Vension/KV-Frame](https://github.com/Vension/
 
 ## 前言
 
-前段时间学习了 Kotlin 的一些语法，然后就写了这个项目熟悉一下 Android的官方语言，总体下来，感觉比较爽，相比 Java 而言源代码行数有所减少、方法数也有所减少。
+前段时间学习了 Kotlin 的一些语法，然后就写了这个项目熟悉一下 Android的官方语言，总体下来，相比 Java 而言源代码行数有所减少、方法数也有所减少。
 
 Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具：
 
@@ -42,8 +41,8 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 - gif
 
 <div style="display:flex;">
-   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" width="50%">
-   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" width="50%">
+   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" width="40%">
+   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" width="40%">
  </details>
 
 
