@@ -30,12 +30,19 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 
 - 截图
 
-![](http://oyp2zrwnm.bkt.clouddn.com/pt2017_12_09_10_27_10.jpg)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-06-681_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-26-949_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-18-517_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-03-850_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-44-989_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-58-192_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-35-25-854_com.kevin.vens.png)
+![](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-36-07-710_com.kevin.vens.png)
 
 - gif
 
-   <img src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" style="width: 50%;">
-   <img src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" style="width: 50%;">
+   <img src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" style="width: 30%;">
+   <img src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" style="width: 30%;">
 
 
 
