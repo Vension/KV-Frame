@@ -1,12 +1,9 @@
 # KV-Frame
 
-[![](https://jitpack.io/v/git-xuhao/KotlinMvp.svg)](https://jitpack.io/#git-xuhao/KotlinMvp)
-[![Build Status](https://travis-ci.org/git-xuhao/KotlinMvp.svg?branch=master)](https://travis-ci.org/git-xuhao/KotlinMvp)
-[![CircleCI](https://circleci.com/gh/git-xuhao/KotlinMvp/tree/master.svg?style=svg)](https://circleci.com/gh/git-xuhao/KotlinMvp/tree/master)
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0ee634e0cc3042f8a98e33d6135f39a6)](https://www.codacy.com/app/git-xuhao/KotlinMvp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=git-xuhao/KotlinMvp&amp;utm_campaign=Badge_Grade)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![](https://img.shields.io/badge/Author-xuhao-blue.svg)](http://xuhaoblog.com)
+[![](https://img.shields.io/badge/Author-vension-blue.svg)](http://vensionblog.com)
 [![](https://img.shields.io/badge/QQ-2506856664-orange.svg)](http://xuhaoblog.com)
 
 
@@ -30,22 +27,24 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 
 - 截图
 <div style="display:flex;">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-06-681_com.kevin.vens.png" width="40%">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-26-949_com.kevin.vens.png" width="40%">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-18-517_com.kevin.vens.png" width="40%">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-03-850_com.kevin.vens.png" width="40%">   
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-44-989_com.kevin.vens.png" width="40%">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-58-192_com.kevin.vens.png" width="40%">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-35-25-854_com.kevin.vens.png" width="40%">
-    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-36-07-710_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-06-681_com.kevin.vens.png" width="30%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-26-949_com.kevin.vens.png" width="30%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-18-517_com.kevin.vens.png" width="30%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-03-850_com.kevin.vens.png" width="30%">   
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-44-989_com.kevin.vens.png" width="30%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-58-192_com.kevin.vens.png" width="30%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-35-25-854_com.kevin.vens.png" width="30%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-36-07-710_com.kevin.vens.png" width="30%">
  </details>
  
 
 
 - gif
-   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" width="40%">
-   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" width="40%">
 
+<div style="display:flex;">
+   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" width="50%">
+   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" width="50%">
+ </details>
 
 
 ## 技术要点
