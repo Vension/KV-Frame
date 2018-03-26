@@ -30,24 +30,21 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 
 - 截图
 <div style="display:flex;">
-          <img alt="image" src="https://github.com/czy1121/update/blob/master/screenshot1.png" width="40%">
-          <img alt="image" src="https://github.com/czy1121/update/blob/master/screenshot2.png" width="40%">
-          <img alt="image" src="https://github.com/czy1121/update/blob/master/screenshot3.png" width="40%">
-          <img alt="image" src="https://github.com/czy1121/update/blob/master/screenshot4.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-06-681_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-26-949_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-18-517_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-03-850_com.kevin.vens.png" width="40%">   
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-44-989_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-58-192_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-35-25-854_com.kevin.vens.png" width="40%">
+    <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-36-07-710_com.kevin.vens.png" width="40%">
  </details>
- <img alt="image" src="https://raw.githubusercontent.com/smuyyh/SprintNBA/master/screenshot/home_news_1.png" width="30%">
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-06-681_com.kevin.vens.png width="30%")
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-26-949_com.kevin.vens.png)
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-18-517_com.kevin.vens.png)
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-03-850_com.kevin.vens.png)
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-33-44-989_com.kevin.vens.png)
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-34-58-192_com.kevin.vens.png)
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-35-25-854_com.kevin.vens.png)
-![image](https://github.com/Vension/KV-Frame/blob/master/screenshot/Screenshot_2018-03-26-15-36-07-710_com.kevin.vens.png)
+ 
+
 
 - gif
-   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" width="30%">
-   <img src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" style="width: 30%;">
+   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153115.gif" width="40%">
+   <img alt="image" src="https://github.com/Vension/KV-Frame/blob/master/screenshot/20180326_153116.gif" width="40%">
 
 
 
