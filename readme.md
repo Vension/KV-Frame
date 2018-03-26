@@ -66,7 +66,7 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 
  - Email: kevin-vension@foxmail.com
  - CSDN:[https://blog.csdn.net/qq_15611357](https://blog.csdn.net/qq_15611357)
- - 简书: [https://www.jianshu.com/users/38adb0e04e65/](https://www.jianshu.com/users/38adb0e04e65)
+ - 简书: [https://www.jianshu.com/users/38adb0e04e65/timeline](https://www.jianshu.com/users/38adb0e04e65/timeline)
 
 ## Thanks
 
