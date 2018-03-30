@@ -27,15 +27,13 @@ public class Api {
     }
 
     //默认服务器地址
-    static public final String SERVER_API_URI = "http://uc.zhiniaoyx.com";
-    static public final String SERVER_TEST_API_URI = "http://uc.t.zhiniaoyx.com";
-    //头像路径
-    static public final String MT_IMAGE_URI = "http://huanxunedu.qiniudn.com/";
+    static public final String SERVER_API_URI = "http://kevin.vension.com";
+    static public final String SERVER_TEST_API_URI = "http://kevin.t.vension.com";
 
     // 每个请求需要传递的参数Token
-    static public final String SERVER_TOKEN = "Bearer 33fa7be4f585b0b9a21f03a8f4a714b95fa7c498";
+    static public final String SERVER_TOKEN = "Bearer ";
     // 获取获取最新Token需要(固定)
-    static public final String SERVER_AUTHORIZAT = "Basic MW1HZm9CalFlSTo1MFBaMmNGZ2picktaR1lo";
+    static public final String SERVER_AUTHORIZAT = "Basic ";
 
 
     /** ================================ 以下是接口路径 ========================================= */
@@ -43,5 +41,5 @@ public class Api {
     //获取Token接口
     public static final String API_TOKEN = "/api/oauth/access_token";
     /**版本更新接口url */
-    public  static String VERSION_UPDATE_DOWNLOAD_URL = "http://kewaimiao.com/static/miaotalk.apk";
+    public  static String VERSION_UPDATE_DOWNLOAD_URL = "http://vension.com/static/release.apk";
 }

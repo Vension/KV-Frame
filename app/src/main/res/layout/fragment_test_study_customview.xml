@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.kevin.vension.demo.test.widget.MyFirstView
+    <com.kevin.vension.demo.test.widget.MyPieView
+        android:id="@+id/my_pieview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

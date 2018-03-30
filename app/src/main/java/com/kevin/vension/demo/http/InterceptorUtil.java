@@ -47,17 +47,6 @@ public class InterceptorUtil {
 			public Response intercept(Chain chain) throws IOException {
 				//拿到请求体
 				Request request = chain.request();
-				// 获取Token时需要旧的Token
-//				if(!TextUtils.isEmpty(request.header("Authorization"))) {
-//					return chain.proceed(request);
-//				}
-
-//				String _Url = request.url().encodedPath();
-//				String _TimeStamp = String.valueOf(System.currentTimeMillis());
-//				String _Authorization = UserACache.getInstance().getAccessToken();
-//				LogUtil.e("_Authorization==》" + _Authorization);
-//				String _SubAuthorization = _Authorization.substring(8, 31);
-//				String _SignedString = _Url + _TimeStamp + "KWMV2" + _SubAuthorization;
 				// 添加头部参数
 				request = request.newBuilder()
 //						.header("Content-Type","application/json; charset=UTF-8")

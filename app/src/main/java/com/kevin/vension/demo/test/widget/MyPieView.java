@@ -3,12 +3,14 @@ package com.kevin.vension.demo.test.widget;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.PointF;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
-import com.kevin.vension.demo.models.TestEntity;
+import com.kevin.vension.demo.test.datas.PieData;
 
 import java.util.ArrayList;
 
@@ -29,7 +31,14 @@ public class MyPieView extends View {
 	private int mWidth,mHeight;//宽高
 	private float mStartAngle = 0;// 饼状图初始绘制角度
 
-	private ArrayList<TestEntity> mDatas;
+	// 文字色块部分
+	private PointF mStartPoint = new PointF(20, 20);
+	private PointF mCurrentPoint = new PointF(mStartPoint.x, mStartPoint.y);
+	private float mColorRectSideLength = 20;
+	private float mTextInterval = 10;
+	private float mRowMaxLength;
+
+	private ArrayList<PieData> mDatas;
 
 	public MyPieView(Context context) {
 		this(context,null);
@@ -69,10 +78,62 @@ public class MyPieView extends View {
 		RectF mRectF = new RectF(-radius,-radius,radius,radius);
 
 		for (int i = 0; i < mDatas.size(); i++) {
-			TestEntity mEntity = mDatas.get(i);
+			PieData mPieData = mDatas.get(i);
+            mPaint.setColor(mPieData.getColor());
+			canvas.drawArc(mRectF,currentStartAngle,mPieData.getAngle(),true,mPaint);
+			currentStartAngle += mPieData.getAngle();
 
+			canvas.save();
+			canvas.translate(-mWidth / 2,-mHeight / 2);
+			RectF colorRectF = new RectF(mCurrentPoint.x,mCurrentPoint.y,mCurrentPoint.x + mColorRectSideLength,mCurrentPoint.y + mColorRectSideLength);
+
+			canvas.restore();
 		}
 
+	}
+
+
+	// 设置起始角度
+	public void setStartAngle(int mStartAngle) {
+		this.mStartAngle = mStartAngle;
+		invalidate();   // 刷新
+	}
+
+	// 设置数据
+	public void setData(ArrayList<PieData> mData) {
+		this.mDatas = mData;
+		initData(mData);
+		invalidate();   // 刷新
+	}
+
+	// 初始化数据
+	private void initData(ArrayList<PieData> mData) {
+		if (null == mData || mData.size() == 0)   // 数据有问题 直接返回
+			return;
+
+		float sumValue = 0;
+		for (int i = 0; i < mData.size(); i++) {
+			PieData pie = mData.get(i);
+
+			sumValue += pie.getValue();       //计算数值和
+
+			int j = i % mColors.length;       //设置颜色
+			pie.setColor(mColors[j]);
+		}
+
+		float sumAngle = 0;
+		for (int i = 0; i < mData.size(); i++) {
+			PieData pie = mData.get(i);
+
+			float percentage = pie.getValue() / sumValue;   // 百分比
+			float angle = percentage * 360;                 // 对应的角度
+
+			pie.setPercentage(percentage);                  // 记录百分比
+			pie.setAngle(angle);                            // 记录角度大小
+			sumAngle += angle;
+
+			Log.i("angle", "" + pie.getAngle());
+		}
 	}
 
 }
