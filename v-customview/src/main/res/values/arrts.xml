@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="PileLayout">
+        <attr name="PileLayout_vertivalSpace" format="dimension"/>
+        <attr name="PileLayout_pileWidth" format="dimension"/>
+    </declare-styleable>
+
     <declare-styleable name="GADownloadingView">
         <attr name="arrow_color" format="color" />
         <attr name="loading_circle_back_color" format="color" />

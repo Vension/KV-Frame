@@ -78,6 +78,8 @@ class TabFragment_1 : BaseRefreshFragment<TestEntity>() {
                 showToast(it.title)
             }
         }
+
+
     }
 
     override fun onTargerRequestApi(isRefreshing: Boolean, page: Int, limit: Int) {

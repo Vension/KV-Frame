@@ -62,15 +62,20 @@ public class ActivityObserver extends ObjectObserver<Activity> {
 
 	/**退出应用程序*/
 	synchronized public void AppExit() {
-		// 清理
-		this.clear();
-		// 杀死进程
-		android.os.Process.killProcess(android.os.Process.myPid());
-		// 退出程序
-		System.exit(0);
-		// 通知系统回收
-		System.gc();
+		try {
+			// 清理
+			this.clear();
+			// 杀死进程
+			android.os.Process.killProcess(android.os.Process.myPid());
+			// 退出程序
+			System.exit(0);
+			// 通知系统回收
+			System.gc();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
+
 
 	@Override
 	public void clear() {
