@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.vension.customview.utils.DimenUtil;
+import com.vension.customview.utils.DisplayUtil;
 
 import java.util.List;
 
@@ -55,9 +55,9 @@ public class GossipView extends View {
 	private int[] outArcColor = {0xff0597d2 ,0xff49b956 , 0xffcc324b , 0xff1a4e95 , 0xff55bc75 , 0xffe55f3a}; 
 	private Context mContext;
 	private SweepGradient mSweepGradient;
-	private int overTouchDistance = DimenUtil.dip2px(getContext(), 15); //扩展距离， 增加外围button的点击效果
+	private int overTouchDistance = DisplayUtil.dip2px(getContext(), 15); //扩展距离， 增加外围button的点击效果
 	private int progressAnimateStartAngle = 0; //用于动画
-	private int padding = DimenUtil.dip2px(getContext(), 0);
+	private int padding = DisplayUtil.dip2px(getContext(), 0);
 	
 	private List<GossipItem> items;
 	 private static int HOME_NUMBER_TEXT_SIZE = 25;

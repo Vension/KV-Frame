@@ -10,7 +10,7 @@ import android.view.WindowManager;
  * Created by Administrator on 2016/5/1.
  * 高度相关工具类
  */
-public class DimenUtil {
+public class DisplayUtil {
 
 	/** 根据手机的分辨率从 dp 的单位 转成为 px(像素)*/
 	static public int dip2px(Context context, float dpValue) {

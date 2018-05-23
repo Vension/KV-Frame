@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FF202332"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_portrait_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/MarginSize_6"
+            android:drawableStart="@drawable/bg_participants_percent"
+            android:gravity="center"
+            android:text="参与人数百分比"
+            android:textColor="#FF727884"
+            android:textSize="@dimen/TextSize_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/MarginSize_10"
+            android:drawablePadding="@dimen/MarginSize_6"
+            android:drawableStart="@drawable/bg_average_score"
+            android:gravity="center"
+            android:text="参与人平均分"
+            android:textColor="#FF727884"
+            android:textSize="@dimen/TextSize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_landscape_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/PaddingSize_6"
+            android:drawableStart="@drawable/bg_participants_percent"
+            android:gravity="center"
+            android:text="参与人数百分比"
+            android:textColor="#FF727884"
+            android:textSize="@dimen/TextSize_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:drawablePadding="@dimen/PaddingSize_6"
+            android:drawableStart="@drawable/bg_average_score"
+            android:gravity="center"
+            android:text="参与人平均分"
+            android:textColor="#FF727884"
+            android:textSize="@dimen/TextSize_12" />
+    </LinearLayout>
+
+    <com.vension.customview.multiChildHistogram.MultiGroupHistogramView
+        android:id="@+id/multiGroupHistogramView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:chartPaddingTop="15dp"
+        app:coordinateAxisColor="#FF727884"
+        app:coordinateAxisWidth="1dp"
+        app:distanceFormGroupNameToAxis="10dp"
+        app:distanceFromValueToHistogram="10dp"
+        app:groupInterval="30dp"
+        app:groupNameTextColor="#FF727884"
+        app:groupNameTextSize="13sp"
+        app:histogramHistogramWidth="20dp"
+        app:histogramInterval="15dp"
+        app:histogramPaddingEnd="15dp"
+        app:histogramPaddingStart="15dp"
+        app:histogramValueDecimalCount="ZERO"
+        app:histogramValueTextColor="#FF727884"
+        app:histogramValueTextSize="10sp" />
+</LinearLayout>

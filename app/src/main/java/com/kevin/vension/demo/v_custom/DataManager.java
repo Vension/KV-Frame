@@ -40,6 +40,7 @@ import com.kevin.vension.demo.v_custom.fragments.LcLableViewFragment;
 import com.kevin.vension.demo.v_custom.fragments.LikeViewFragment;
 import com.kevin.vension.demo.v_custom.fragments.LiveFragment;
 import com.kevin.vension.demo.v_custom.fragments.LotteryViewFragment;
+import com.kevin.vension.demo.v_custom.fragments.MultiGroupHistogramViewFragment;
 import com.kevin.vension.demo.v_custom.fragments.NativeDrawHeartAndTypeTextViewFragment;
 import com.kevin.vension.demo.v_custom.fragments.ObjectAnimatorFragment;
 import com.kevin.vension.demo.v_custom.fragments.PaletteImageViewFragment;
@@ -182,6 +183,7 @@ public class DataManager {
 			new TestEntity("自定义录音、播放动画View效果"),
 			new TestEntity("一个绚丽的Downloading动画","https://github.com/Ajian-studio/GADownloading"),
 			new TestEntity("堆叠点赞效果PileLayout","https://github.com/LineChen/PileLayout"),
+			new TestEntity("多组分直方图表"),
 	};
 
 
@@ -403,6 +405,9 @@ public class DataManager {
 				break;
 			case 70://堆叠点赞效果PileLayout
 				fragment.startAgentActivity(PileLayoutFragment.class,_Bundle);
+				break;
+			case 71://多组分直方图表
+				fragment.startAgentActivity(MultiGroupHistogramViewFragment.class,_Bundle);
 				break;
 
 			default:break;

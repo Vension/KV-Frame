@@ -11,7 +11,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.vension.customview.utils.DimenUtil;
+import com.vension.customview.utils.DisplayUtil;
 
 
 /**
@@ -72,14 +72,14 @@ public class ArcProgress extends View {
 	public ArcProgress(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 
-		default_text_size = DimenUtil.sp2px(context, 18);
-		min_size = (int) DimenUtil.dip2px(context, 100);
-		default_text_size = DimenUtil.sp2px(context, 40);
-		default_suffix_text_size = DimenUtil.sp2px(context, 15);
-		default_suffix_padding = DimenUtil.dip2px(context, 4);
+		default_text_size = DisplayUtil.sp2px(context, 18);
+		min_size = (int) DisplayUtil.dip2px(context, 100);
+		default_text_size = DisplayUtil.sp2px(context, 40);
+		default_suffix_text_size = DisplayUtil.sp2px(context, 15);
+		default_suffix_padding = DisplayUtil.dip2px(context, 4);
 		default_suffix_text = "步";
-		default_bottom_text_size = DimenUtil.sp2px(context, 10);
-		default_stroke_width = DimenUtil.dip2px(context, 4);
+		default_bottom_text_size = DisplayUtil.sp2px(context, 10);
+		default_stroke_width = DisplayUtil.dip2px(context, 4);
 
 		TypedArray attributes = context.getTheme().obtainStyledAttributes(attrs, R.styleable.ArcProgress, defStyleAttr, 0);
 		initByAttributes(attributes);

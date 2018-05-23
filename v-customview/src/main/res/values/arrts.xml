@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="MultiGroupHistogramView">
+        <attr name="coordinateAxisWidth" format="dimension" />
+        <attr name="coordinateAxisColor" format="color" />
+        <attr name="groupNameTextColor" format="color" />
+        <attr name="groupNameTextSize" format="dimension" />
+        <attr name="groupInterval" format="dimension" />
+        <attr name="histogramInterval" format="dimension" />
+        <attr name="histogramValueTextColor" format="color" />
+        <attr name="histogramValueTextSize" format="dimension" />
+        <attr name="histogramHistogramWidth" format="dimension" />
+        <attr name="histogramPaddingStart" format="dimension" />
+        <attr name="histogramPaddingEnd" format="dimension" />
+        <attr name="chartPaddingTop" format="dimension" />
+        <attr name="distanceFormGroupNameToAxis" format="dimension" />
+        <attr name="distanceFromValueToHistogram" format="dimension" />
+        <!--图表数值小数点位数-->
+        <attr name="histogramValueDecimalCount">
+            <enum name="ZERO" value="0" />
+            <enum name="ONE" value="1" />
+            <enum name="TWO" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RatingView">
+        <attr name="starsNum" format="integer" />
+        <attr name="starWidth" format="dimension" />
+        <attr name="starHeight" format="dimension" />
+        <attr name="starDistance" format="dimension" />
+        <attr name="starBackground" format="reference" />
+        <attr name="starDrawBackground" format="reference" />
+        <attr name="isIndicator" format="boolean" />
+        <!--默认星星数(可为小数)，取值范围[0-starNum]-->
+        <attr name="defaultStarNum" format="float" />
+        <!--每颗星星代表的分值-->
+        <attr name="valuePerStar" format="integer" />
+    </declare-styleable>
+
     <declare-styleable name="PileLayout">
         <attr name="PileLayout_vertivalSpace" format="dimension"/>
         <attr name="PileLayout_pileWidth" format="dimension"/>

@@ -9,7 +9,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.vension.customview.utils.DimenUtil;
+import com.vension.customview.utils.DisplayUtil;
 
 
 /**
@@ -147,7 +147,7 @@ public class CompareIndicator extends View {
         mOppositePaint.setColor(oppositeLineColor);
         mApprovePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mApprovePaint.setColor(approveLineColor);
-        float lineWidth = DimenUtil.dip2px(context, lineWidthDimen);
+        float lineWidth = DisplayUtil.dip2px(context, lineWidthDimen);
         /**
          * 此处不能开启canvas绘图硬件加速 会导致部分api 显示不正常
          */
@@ -169,9 +169,9 @@ public class CompareIndicator extends View {
         /**
          * 画左右涨跌图
          */
-        marginLeft_16dp = DimenUtil.dip2px(context, 16f);
-        marginTop_12dp = DimenUtil.dip2px(context, 10f);
-        Start_down_cx = marginLeft_16dp + mOppositeBitmap.getWidth() + DimenUtil.dip2px(context, 8f);
+        marginLeft_16dp = DisplayUtil.dip2px(context, 16f);
+        marginTop_12dp = DisplayUtil.dip2px(context, 10f);
+        Start_down_cx = marginLeft_16dp + mOppositeBitmap.getWidth() + DisplayUtil.dip2px(context, 8f);
         Start_down_cy = marginTop_12dp + mOppositeBitmap.getHeight() / 2;
 
 
@@ -181,19 +181,19 @@ public class CompareIndicator extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         float end_down_cy = Start_down_cy;
-        float end_up_cx = getWidth() - marginLeft_16dp - mApproveBitmap.getWidth() - DimenUtil.dip2px(context, 8);
-        float width = end_up_cx - Start_down_cx - DimenUtil.dip2px(context, 8);
+        float end_up_cx = getWidth() - marginLeft_16dp - mApproveBitmap.getWidth() - DisplayUtil.dip2px(context, 8);
+        float width = end_up_cx - Start_down_cx - DisplayUtil.dip2px(context, 8);
         float approveLineWidth;
         float oppositeLineWidth;
         if (mOppostiteCount != 0 && mApproveCount != 0) {
             approveLineWidth = width / (mOppostiteCount + mApproveCount) * mApproveCount;
             oppositeLineWidth = width / (mOppostiteCount + mApproveCount) * mOppostiteCount;
         } else if (mOppostiteCount == 0 && mApproveCount != 0) {
-            oppositeLineWidth = DimenUtil.dip2px(context, 1);
+            oppositeLineWidth = DisplayUtil.dip2px(context, 1);
             approveLineWidth = width - oppositeLineWidth;
 
         } else if (mOppostiteCount != 0 && mApproveCount == 0) {
-            approveLineWidth = DimenUtil.dip2px(context, 1);
+            approveLineWidth = DisplayUtil.dip2px(context, 1);
             oppositeLineWidth = width - approveLineWidth;
         } else {
             oppositeLineWidth = width / 2;
@@ -203,7 +203,7 @@ public class CompareIndicator extends View {
         /**
          * 画 第二个圆弧
          */
-        float start_up_cx = end_down_cx + DimenUtil.dip2px(context, 8);
+        float start_up_cx = end_down_cx + DisplayUtil.dip2px(context, 8);
         canvas.drawBitmap(mOppositeBitmap, marginLeft_16dp, marginTop_12dp, BitmapPaint);
         canvas.drawBitmap(mApproveBitmap, getWidth() - marginLeft_16dp - mApproveBitmap.getWidth(), marginTop_12dp, BitmapPaint);
 
@@ -214,10 +214,10 @@ public class CompareIndicator extends View {
         /**
          * 画 第四个圆弧
          */
-        mOppositePaint.setTextSize(DimenUtil.dip2px(context, 12));
-        canvas.drawText(String.valueOf(mOppostiteCount), Start_down_cx, Start_down_cy + DimenUtil.dip2px(context, 18), mOppositePaint);
-        mApprovePaint.setTextSize(DimenUtil.dip2px(context, 12));
-        canvas.drawText(String.valueOf(mApproveCount), end_up_cx - DimenUtil.calcTextWidth(mApprovePaint, String.valueOf(mApproveCount)), Start_down_cy + DimenUtil.dip2px(context, 18), mApprovePaint);
+        mOppositePaint.setTextSize(DisplayUtil.dip2px(context, 12));
+        canvas.drawText(String.valueOf(mOppostiteCount), Start_down_cx, Start_down_cy + DisplayUtil.dip2px(context, 18), mOppositePaint);
+        mApprovePaint.setTextSize(DisplayUtil.dip2px(context, 12));
+        canvas.drawText(String.valueOf(mApproveCount), end_up_cx - DisplayUtil.calcTextWidth(mApprovePaint, String.valueOf(mApproveCount)), Start_down_cy + DisplayUtil.dip2px(context, 18), mApprovePaint);
     }
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
